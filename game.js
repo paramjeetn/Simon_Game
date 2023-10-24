@@ -4,14 +4,6 @@ var userClickedPattern = [];
 var level=0;
 var started = false;
 
-$(h1).ontouchstart(function(){
-if (!started) {
-      $("#level-title").text("Level " + level);
-      newSequence();
-      started = true;
-    }
-});
-
 $(document).keypress(function() {
     
     if (!started) {
